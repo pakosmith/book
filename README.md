@@ -25,7 +25,7 @@ releases are updated less frequently.
 [nightly]: https://doc.rust-lang.org/nightly/book/
 
 <!-- See the [releases] to download just the code of all the code listings that appear in the book. -->
-Смотрите раздел [releases], чтобы загрузить только код всех листингов, которые появляются в книге.
+Смотрите раздел [releases], чтобы загрузить код всех листингов, которые появляются в книге.
 
 [releases]: https://github.com/rust-lang/book/releases
 
@@ -54,7 +54,7 @@ $ mdbook build
 
 <!-- The output will be in the `book` subdirectory. To check it out, open it in
 your web browser. -->
-Книга будет лежать в подкаталоге `book`. Чтобы проверить, откройте её в
+Книга будет лежать в подкаталоге `book`. Для проверки, откройте её в
 вашем веб-браузере.
 
 _Firefox:_
@@ -85,7 +85,7 @@ $ mdbook test
 
 <!-- We'd love your help! Please see [CONTRIBUTING.md][contrib] to learn about the
 kinds of contributions we're looking for. -->
-Мы будем рады вашей помощи! Пожалуйст, просмотрите файл [CONTRIBUTING.md][contrib] чтобы узнать,
+Мы будем рады вашей помощи! Пожалуйста, просмотрите файл [CONTRIBUTING.md][contrib] чтобы узнать,
 как вы можете нам помочь.
 
 [contrib]: https://github.com/rust-lang/book/blob/master/CONTRIBUTING.md
