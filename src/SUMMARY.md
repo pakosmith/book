@@ -1,36 +1,61 @@
-# The Rust Programming Language
+<!-- # The Rust Programming Language -->
+# Язык программирования Rust
 
 [The Rust Programming Language](title-page.md)
 [Foreword](foreword.md)
 [Introduction](ch00-00-introduction.md)
 
-## Getting started
+<!-- ## Getting started -->
+## Начало работы
 
-- [Getting Started](ch01-00-getting-started.md)
+<!-- - [Getting Started](ch01-00-getting-started.md)
     - [Installation](ch01-01-installation.md)
     - [Hello, World!](ch01-02-hello-world.md)
-    - [Hello, Cargo!](ch01-03-hello-cargo.md)
+    - [Hello, Cargo!](ch01-03-hello-cargo.md) -->
+- [Начало работы](ch01-00-getting-started.md)
+    - [Установка](ch01-01-installation.md)
+    - [Привет, Мир!](ch01-02-hello-world.md)
+    - [Привет, Cargo!](ch01-03-hello-cargo.md)
 
-- [Programming a Guessing Game](ch02-00-guessing-game-tutorial.md)
+<!-- - [Programming a Guessing Game](ch02-00-guessing-game-tutorial.md) -->
+- [Программирование игры Угадайка](ch02-00-guessing-game-tutorial.md)
 
-- [Common Programming Concepts](ch03-00-common-programming-concepts.md)
+<!-- - [Common Programming Concepts](ch03-00-common-programming-concepts.md)
     - [Variables and Mutability](ch03-01-variables-and-mutability.md)
     - [Data Types](ch03-02-data-types.md)
     - [Functions](ch03-03-how-functions-work.md)
     - [Comments](ch03-04-comments.md)
-    - [Control Flow](ch03-05-control-flow.md)
+    - [Control Flow](ch03-05-control-flow.md) -->
+- [Общие концепции программирования](ch03-00-common-programming-concepts.md)
+    - [Переменные и изменчивость](ch03-01-variables-and-mutability.md)
+    - [Типы данных](ch03-02-data-types.md)
+    - [Функции](ch03-03-how-functions-work.md)
+    - [Комментарии](ch03-04-comments.md)
+    - [Операторы ветвления](ch03-05-control-flow.md)
 
-- [Understanding Ownership](ch04-00-understanding-ownership.md)
+<!-- - [Understanding Ownership](ch04-00-understanding-ownership.md)
     - [What is Ownership?](ch04-01-what-is-ownership.md)
     - [References and Borrowing](ch04-02-references-and-borrowing.md)
-    - [The Slice Type](ch04-03-slices.md)
+    - [The Slice Type](ch04-03-slices.md) -->
+- [Понятие Владения](ch04-00-understanding-ownership.md)
+    - [Что такое Владение?](ch04-01-what-is-ownership.md)
+    - [Ссылки и заимствования](ch04-02-references-and-borrowing.md)
+    - [Тип Slice](ch04-03-slices.md)
 
-- [Using Structs to Structure Related Data](ch05-00-structs.md)
+<!-- - [Using Structs to Structure Related Data](ch05-00-structs.md)
     - [Defining and Instantiating Structs](ch05-01-defining-structs.md)
     - [An Example Program Using Structs](ch05-02-example-structs.md)
-    - [Method Syntax](ch05-03-method-syntax.md)
+    - [Method Syntax](ch05-03-method-syntax.md) -->
+- [Использование структур для структурирования связанных данных](ch05-00-structs.md)
+    - [Определение и создание структур](ch05-01-defining-structs.md)
+    - [Пример программы, использующей структуры](ch05-02-example-structs.md)
+    - [Синтаксис методов](ch05-03-method-syntax.md)
 
-- [Enums and Pattern Matching](ch06-00-enums.md)
+<!-- - [Enums and Pattern Matching](ch06-00-enums.md)
+    - [Defining an Enum](ch06-01-defining-an-enum.md)
+    - [The `match` Control Flow Operator](ch06-02-match.md)
+    - [Concise Control Flow with `if let`](ch06-03-if-let.md) -->
+- [Перечисления и сопоставление шаблонов](ch06-00-enums.md)
     - [Defining an Enum](ch06-01-defining-an-enum.md)
     - [The `match` Control Flow Operator](ch06-02-match.md)
     - [Concise Control Flow with `if let`](ch06-03-if-let.md)
