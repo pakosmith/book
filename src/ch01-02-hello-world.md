@@ -1,23 +1,38 @@
-## Hello, World!
+<!-- ## Hello, World! -->
+## Привет, мир!
 
-Now that you’ve installed Rust, let’s write your first Rust program. It’s
+<!-- Now that you’ve installed Rust, let’s write your first Rust program. It’s
 traditional when learning a new language to write a little program that prints
-the text `Hello, world!` to the screen, so we’ll do the same here!
+the text `Hello, world!` to the screen, so we’ll do the same here! -->
+Теперь, когда вы установили Rust, давайте напишем вашу первую программу на нём.
+При изучении нового языка традиционно пишется небольшая программа, которая 
+выводит на экран текст `Hello, world!`, Поэтому мы сделаем то же самое здесь!
 
-> Note: This book assumes basic familiarity with the command line. Rust makes
+<!-- > Note: This book assumes basic familiarity with the command line. Rust makes
 > no specific demands about your editing or tooling or where your code lives, so
 > if you prefer to use an integrated development environment (IDE) instead of
 > the command line, feel free to use your favorite IDE. Many IDEs now have some
 > degree of Rust support; check the IDE’s documentation for details. Recently,
 > the Rust team has been focusing on enabling great IDE support, and progress
-> has been made rapidly on that front!
+> has been made rapidly on that front! -->
+> Примечание: Эта книга предполагает базовое знакомство с командной строкой.
+> Rust не предъявляет особых требований к вашим инструментам, или к тому,
+> где живет ваш код, поэтому, если вы предпочитаете использовать
+> интегрированную среду разработки (IDE) вместо командной строки, смело используйте
+> вашу любимую IDE. Многие IDE имеют поддержку Rust; уточните это в
+> документации к вашей IDE. В последнее время команда Rust сосредоточилась на том,
+> чтобы обеспечить хорошую поддержку IDE, и в этой области был достигнут большой прогресс!
 
-### Creating a Project Directory
+<!-- ### Creating a Project Directory -->
+### Создание каталога проекта
 
-You’ll start by making a directory to store your Rust code. It doesn’t matter
+<!-- You’ll start by making a directory to store your Rust code. It doesn’t matter
 to Rust where your code lives, but for the exercises and projects in this book,
 we suggest making a *projects* directory in your home directory and keeping all
-your projects there.
+your projects there. -->
+Начнём с создания каталога для хранения вашего кода. Для Rust не имеет значения,
+где располагается ваш код, но для упражнений и проектов в этой книге мы предлагаем
+создать каталог *projects* в вашем домашнем каталоге и хранить все ваши проекты там.
 
 Open a terminal and enter the following commands to make a *projects* directory
 and a directory for the “Hello, world!” project within the *projects* directory.
