@@ -194,9 +194,9 @@ resources include [the Users forum][users] and [Stack Overflow][stackoverflow]. 
 <!-- The installation of Rust also includes a copy of the documentation locally, so
 you can read it offline. Run `rustup doc` to open the local documentation in
 your browser. -->
-Установка Rust также включает локальную копию документации, поэтому вы можете 
-читать ее в оффлайн режиме. Запустите `rustup doc`, чтобы открыть локальную 
-документацию в вашем браузере.
+Установка Rust также включает локальную копию документации, которую вы можете 
+читать в оффлайн режиме. Запустите `rustup doc`, чтобы открыть документацию
+в вашем браузере.
 
 <!-- Any time a type or function is provided by the standard library and you’re not
 sure what it does or how to use it, use the application programming interface
