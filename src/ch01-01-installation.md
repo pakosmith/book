@@ -182,7 +182,8 @@ resources include [the Users forum][users] and [Stack Overflow][stackoverflow]. 
 системной переменной `%PATH%`. Если все верно и Rust по-прежнему не работает,
 есть ряд мест, где вы можете получить помощь. Самый простой способ - канал #beginners 
 на [официальном Rust Discord][discord]. Там можно пообщаться с другими Растаманами
-(глупое прозвище, которым мы называем себя), которые могут вам помочь.
+(глупое прозвище, которым мы называем себя), которые могут вам помочь. Другие
+замечательные ресурсы - [Форум пользователей][users] и [Stack Overflow][stackoverflow].
 
 [discord]: https://discord.gg/rust-lang
 [users]: https://users.rust-lang.org/
