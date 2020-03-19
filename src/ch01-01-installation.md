@@ -189,7 +189,7 @@ resources include [the Users forum][users] and [Stack Overflow][stackoverflow]. 
 [stackoverflow]: http://stackoverflow.com/questions/tagged/rust
 
 <!-- ### Local Documentation -->
-### Локальная документация
+### Оффлайн документация
 
 <!-- The installation of Rust also includes a copy of the documentation locally, so
 you can read it offline. Run `rustup doc` to open the local documentation in
