@@ -201,65 +201,104 @@ end with a semicolon. -->
 что данное выражение закончено и следующее готово к началу. Большинство строк кода
 Rust заканчиваются точкой с запятой.
 
-### Compiling and Running Are Separate Steps
+<!-- ### Compiling and Running Are Separate Steps -->
+### Компиляция и запуск - это отдельные шаги
 
-You’ve just run a newly created program, so let’s examine each step in the
-process.
+<!-- You’ve just run a newly created program, so let’s examine each step in the
+process. -->
+Вы только что запустили недавно созданную программу, поэтому давайте рассмотрим
+каждый шаг этого процесса.
 
-Before running a Rust program, you must compile it using the Rust compiler by
+<!-- Before running a Rust program, you must compile it using the Rust compiler by
 entering the `rustc` command and passing it the name of your source file, like
-this:
+this: -->
+Перед запуском программы вы должны скомпилировать ее с помощью компилятора Rust,
+введя команду `rustc` и передав ей имя вашего исходного файла, например:
 
 ```text
 $ rustc main.rs
 ```
 
-If you have a C or C++ background, you’ll notice that this is similar to `gcc`
-or `clang`. After compiling successfully, Rust outputs a binary executable.
+<!-- If you have a C or C++ background, you’ll notice that this is similar to `gcc`
+or `clang`. After compiling successfully, Rust outputs a binary executable. -->
+Если вы до этого писали на C или C++, вы заметите схожесть с `gcc` или `clang`.
+После успешной компиляции Rust создаёт двоичный исполняемый файл.
 
-On Linux, macOS, and PowerShell on Windows, you can see the executable by
+<!-- On Linux, macOS, and PowerShell on Windows, you can see the executable by
 entering the `ls` command in your shell. On Linux and macOS, you’ll see two
 files. With PowerShell on Windows, you’ll see the same three files that you
-would see using CMD.
+would see using CMD. -->
+В Linux, macOS и в PowerShell на Windows вы можете увидеть исполняемый файл,
+введя команду `ls`. В Linux и macOS вы увидите два файла. На Windows, в PowerShell
+вы увидите те же три файла, что и при использовании командной строки.
 
 ```text
 $ ls
 main  main.rs
 ```
 
-With CMD on Windows, you would enter the following:
+<!-- With CMD on Windows, you would enter the following: -->
+В командную строку Windows вы должны ввести следующее:
 
-```cmd
+<!-- ```cmd
 > dir /B %= the /B option says to only show the file names =%
+main.exe
+main.pdb
+main.rs
+``` -->
+```cmd
+> dir /B %= опция /B необходима чтобы показывать только имена файлов =%
 main.exe
 main.pdb
 main.rs
 ```
 
-This shows the source code file with the *.rs* extension, the executable file
+<!-- This shows the source code file with the *.rs* extension, the executable file
 (*main.exe* on Windows, but *main* on all other platforms), and, when using
 Windows, a file containing debugging information with the *.pdb* extension.
-From here, you run the *main* or *main.exe* file, like this:
+From here, you run the *main* or *main.exe* file, like this: -->
+Здесь показан файл исходного кода с расширением *.rs*, исполняемый файл (*main.exe*
+в Windows; *main* на всех других платформах) и, при использовании Windows, файл,
+содержащий отладочную информацию с расширением *.pdb*. Отсюда вы запускаете файл
+*main* или *main.exe*, например так:
 
-```text
+<!-- ```text
 $ ./main # or .\main.exe on Windows
+``` -->
+```text
+$ ./main # или .\main.exe на Windows
 ```
 
-If *main.rs* was your “Hello, world!” program, this line would print `Hello,
-world!` to your terminal.
+<!-- If *main.rs* was your “Hello, world!” program, this line would print `Hello,
+world!` to your terminal. -->
+Если *main.rs* - файл с исходным кодом вашей программы “Hello, world!”,
+данная команда выведет `Hello, world!` в окно вашего терминала.
 
-If you’re more familiar with a dynamic language, such as Ruby, Python, or
+<!-- If you’re more familiar with a dynamic language, such as Ruby, Python, or
 JavaScript, you might not be used to compiling and running a program as
 separate steps. Rust is an *ahead-of-time compiled* language, meaning you can
 compile a program and give the executable to someone else, and they can run it
 even without having Rust installed. If you give someone a *.rb*, *.py*, or
 *.js* file, they need to have a Ruby, Python, or JavaScript implementation
 installed (respectively). But in those languages, you only need one command to
-compile and run your program. Everything is a trade-off in language design.
+compile and run your program. Everything is a trade-off in language design. -->
+Если вы были знакомы с динамическими языками, такими как Ruby, Python
+или JavaScript, вы могли не использовать компиляцию и запуск программы как
+отдельные шаги. Rust - это *AOT-компилируемый* язык, то есть вы можете
+скомпилировать программу и передать исполняемый файл кому-то еще,
+и они смогут запустить его даже без установки Rust. Если вы передадите
+кому-нибудь файл *.rb*, *.py* или *.js*, то у него должен быть установлен
+интерпретатор Ruby, Python или JavaScript (соответственно). Однако на этих языках 
+вам нужна только одна команда для компиляции и запуска вашей программы.
+Все это компромисс в языковом дизайне.
 
-Just compiling with `rustc` is fine for simple programs, but as your project
+<!-- Just compiling with `rustc` is fine for simple programs, but as your project
 grows, you’ll want to manage all the options and make it easy to share your
 code. Next, we’ll introduce you to the Cargo tool, which will help you write
-real-world Rust programs.
+real-world Rust programs. -->
+Компиляция с помощью `rustc` отлично подходит для простых программ,
+но по мере роста вашего проекта вы захотите управлять всеми опциями
+и упростить обмен своим кодом. Далее мы познакомим вас с инструментом
+Cargo, который поможет вам создавать реальные программы на Rust.
 
 [troubleshooting]: ch01-01-installation.html#troubleshooting
