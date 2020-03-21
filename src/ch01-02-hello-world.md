@@ -31,13 +31,16 @@ to Rust where your code lives, but for the exercises and projects in this book,
 we suggest making a *projects* directory in your home directory and keeping all
 your projects there. -->
 Начнём с создания каталога для хранения вашего кода. Для Rust не имеет значения,
-где располагается ваш код, но для упражнений и проектов в этой книге мы предлагаем
-создать каталог *projects* в вашем домашнем каталоге и хранить все ваши проекты там.
+где располагается ваш код, но для упражнений и проектов из этой книги мы предлагаем
+создать каталог *projects* в вашем домашнем каталоге и хранить все проекты там.
 
-Open a terminal and enter the following commands to make a *projects* directory
-and a directory for the “Hello, world!” project within the *projects* directory.
+<!-- Open a terminal and enter the following commands to make a *projects* directory
+and a directory for the “Hello, world!” project within the *projects* directory. -->
+Откройте терминал и введите следующие команды, чтобы создать каталог *projects* 
+и внутри него папку для проекта «Hello, world!».
 
-For Linux, macOS, and PowerShell on Windows, enter this:
+<!-- For Linux, macOS, and PowerShell on Windows, enter this: -->
+Для Linux, macOS и PowerShell на Windows введите следующее:
 
 ```text
 $ mkdir ~/projects
@@ -46,7 +49,7 @@ $ mkdir hello_world
 $ cd hello_world
 ```
 
-For Windows CMD, enter this:
+Для командной строки Windows введите это:
 
 ```cmd
 > mkdir "%USERPROFILE%\projects"
@@ -55,16 +58,23 @@ For Windows CMD, enter this:
 > cd hello_world
 ```
 
-### Writing and Running a Rust Program
+<!-- ### Writing and Running a Rust Program -->
+### Написание и запуск программы на Rust
 
-Next, make a new source file and call it *main.rs*. Rust files always end with
+<!-- Next, make a new source file and call it *main.rs*. Rust files always end with
 the *.rs* extension. If you’re using more than one word in your filename, use
 an underscore to separate them. For example, use *hello_world.rs* rather than
-*helloworld.rs*.
+*helloworld.rs*. -->
+Затем создайте новый исходный файл и назовите его *main.rs*. Файлы Rust 
+всегда заканчиваются расширением *.rs*. Если в названии файла более одного слова,
+используйте подчеркивание, чтобы отделить их. Например, используйте *hello_world.rs*
+вместо *helloworld.rs*.
 
-Now open the *main.rs* file you just created and enter the code in Listing 1-1.
+<!-- Now open the *main.rs* file you just created and enter the code in Listing 1-1. -->
+Теперь откройте файл *main.rs*, который вы только что создали, и введите код из Листинга 1-1.
 
-<span class="filename">Filename: main.rs</span>
+<!-- <span class="filename">Filename: main.rs</span> -->
+<span class="filename">Имя файла: main.rs</span>
 
 ```rust
 fn main() {
@@ -72,10 +82,13 @@ fn main() {
 }
 ```
 
-<span class="caption">Listing 1-1: A program that prints `Hello, world!`</span>
+<!-- <span class="caption">Listing 1-1: A program that prints `Hello, world!`</span> -->
+<span class="caption">Листинг 1-1: программа, которая печатает `Hello, world!`</span>
 
-Save the file and go back to your terminal window. On Linux or macOS, enter
-the following commands to compile and run the file:
+<!-- Save the file and go back to your terminal window. On Linux or macOS, enter
+the following commands to compile and run the file: -->
+Сохраните файл и вернитесь в окно терминала. В Linux или macOS введите следующие
+команды для компиляции и запуска программы:
 
 ```text
 $ rustc main.rs
@@ -83,7 +96,8 @@ $ ./main
 Hello, world!
 ```
 
-On Windows, enter the command `.\main.exe` instead of `./main`:
+<!-- On Windows, enter the command `.\main.exe` instead of `./main`: -->
+В Windows введите команду `.\main.exe` вместо `./main`:
 
 ```powershell
 > rustc main.rs
@@ -91,18 +105,27 @@ On Windows, enter the command `.\main.exe` instead of `./main`:
 Hello, world!
 ```
 
-Regardless of your operating system, the string `Hello, world!` should print to
+<!-- Regardless of your operating system, the string `Hello, world!` should print to
 the terminal. If you don’t see this output, refer back to the
-[“Troubleshooting”][troubleshooting]<!-- ignore --> part of the Installation
-section for ways to get help.
+[“Troubleshooting”][troubleshooting]<!-- ignore -> part of the Installation
+section for ways to get help. -->
+Вне зависимоти от вашей операционной системы, в окне терминала должна появиться
+строка `Hello, world!`. Если этого не произошло, вернитесь к части 
+[“Устранение неполадок”][troubleshooting] <!-- ignore --> раздела «Установка»
+для получения помощи.
 
-If `Hello, world!` did print, congratulations! You’ve officially written a Rust
-program. That makes you a Rust programmer—welcome!
+<!-- If `Hello, world!` did print, congratulations! You’ve officially written a Rust
+program. That makes you a Rust programmer—welcome! -->
+Если вы увидели строку `Hello, world!`, поздравляем! Вы официально написали программу
+на Rust. Это делает вас программистом Rust - добро пожаловать!
 
-### Anatomy of a Rust Program
+<!-- ### Anatomy of a Rust Program -->
+### Анализ программы
 
-Let’s review in detail what just happened in your “Hello, world!” program.
-Here’s the first piece of the puzzle:
+<!-- Let’s review in detail what just happened in your “Hello, world!” program.
+Here’s the first piece of the puzzle: -->
+Давайте подробно рассмотрим, что только что произошло в вашей программе “Hello, world!”.
+Вот первый кусочек этого пазла:
 
 ```rust
 fn main() {
@@ -110,44 +133,73 @@ fn main() {
 }
 ```
 
-These lines define a function in Rust. The `main` function is special: it is
+<!-- These lines define a function in Rust. The `main` function is special: it is
 always the first code that runs in every executable Rust program. The first
 line declares a function named `main` that has no parameters and returns
-nothing. If there were parameters, they would go inside the parentheses, `()`.
+nothing. If there were parameters, they would go inside the parentheses, `()`. -->
+Эти строки объявляют функцию в Rust. Функция `main` является особенной:
+в ней расположен код, который выполняется в первую очередь при запуске каждой исполняемой
+программы на Rust. Первая строка объявляет функцию с именем `main`, которая не имеет
+параметров и ничего не возвращает. Если бы там были параметры, они были бы заключены
+в круглые скобки, `()`.
 
-Also, note that the function body is wrapped in curly brackets, `{}`. Rust
+<!-- Also, note that the function body is wrapped in curly brackets, `{}`. Rust
 requires these around all function bodies. It’s good style to place the opening
 curly bracket on the same line as the function declaration, adding one space in
-between.
+between. -->
+Также обратите внимание на то, что тело функции заключено в фигурные скобки, `{}`.
+Rust требует, чтобы тела всех функций были заключены в фигурные скобки.
+Рекомендуется размещать открывающую фигурную скобку на той же строке, что и
+объявление функции, разделяя их одним пробелом.
 
-At the time of this writing, an automatic formatter tool called `rustfmt` is
+<!-- At the time of this writing, an automatic formatter tool called `rustfmt` is
 under development. If you want to stick to a standard style across Rust
 projects, `rustfmt` will format your code in a particular style. The Rust team
 plans to eventually include this tool with the standard Rust distribution, like
 `rustc`. So depending on when you read this book, it might already be installed
-on your computer! Check the online documentation for more details.
+on your computer! Check the online documentation for more details. -->
+На момент написания этой статьи автоматический инструмент форматирования `rustfmt`
+находится в стадии разработки. Если вы хотите придерживаться стандартного стиля
+в проектах Rust, `rustfmt` отформатирует ваш код в определенном стиле. Команда
+Rust планирует со временем включить этот инструмент в стандартный дистрибутив Rust,
+например `rustc`. Таким образом, в зависимости от того, когда вы читаете эту книгу,
+`rustfmt` уже может быть установлен на вашем компьютере! Для получения более подробной
+информации ознакомьтесь с онлайн-документацией.
 
-Inside the `main` function is the following code:
+<!-- Inside the `main` function is the following code: -->
+В функции `main` находится следующий код: 
 
 ```rust
     println!("Hello, world!");
 ```
 
-This line does all the work in this little program: it prints text to the
+<!-- This line does all the work in this little program: it prints text to the
 screen. There are four important details to notice here. First, Rust style is
-to indent with four spaces, not a tab.
+to indent with four spaces, not a tab. -->
+Эта строка выполняет всю работу в нашей маленькой программе: она выводит текст
+на экран. Здесь нужно отметить четыре важные детали. Во-первых, стиль Rust
+требует делать отступы, состоящие из четырех пробелов, а не табуляции.
 
-Second, `println!` calls a Rust macro. If it called a function instead, it
+<!-- Second, `println!` calls a Rust macro. If it called a function instead, it
 would be entered as `println` (without the `!`). We’ll discuss Rust macros in
 more detail in Chapter 19. For now, you just need to know that using a `!`
-means that you’re calling a macro instead of a normal function.
+means that you’re calling a macro instead of a normal function. -->
+Во-вторых, `println!` вызывает макрос Rust. Если бы мы хотели вызвать
+функцию вместо этого, мы бы ввели `println` (без `!`). Мы обсудим макросы более
+подробно в Главе 19. А пока вам просто нужно знать, что вызов с `!` означает,
+что вы вызываете макрос вместо обычной функции.
 
-Third, you see the `"Hello, world!"` string. We pass this string as an argument
-to `println!`, and the string is printed to the screen.
+<!-- Third, you see the `"Hello, world!"` string. We pass this string as an argument
+to `println!`, and the string is printed to the screen. -->
+В-третьих, вы видите строку `"Hello, world!"`. Мы передаем эту строку в качестве
+аргумента `println!`, и строка выводится на экран.
 
-Fourth, we end the line with a semicolon (`;`), which indicates that this
+<!-- Fourth, we end the line with a semicolon (`;`), which indicates that this
 expression is over and the next one is ready to begin. Most lines of Rust code
-end with a semicolon.
+end with a semicolon. -->
+В-четвертых, мы заканчиваем строку точкой с запятой (`;`), которая указывает на то,
+что данное выражение закончено и следующее готово к началу. Большинство строк кода
+Rust заканчиваются точкой с запятой.
 
 ### Compiling and Running Are Separate Steps
 
