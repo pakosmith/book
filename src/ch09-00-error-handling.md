@@ -1,18 +1,31 @@
-# Error Handling
+<!-- # Error Handling -->
+# Обработка ошибок
 
-Rust’s commitment to reliability extends to error handling. Errors are a fact
+<!-- Rust’s commitment to reliability extends to error handling. Errors are a fact
 of life in software, so Rust has a number of features for handling situations
 in which something goes wrong. In many cases, Rust requires you to acknowledge
 the possibility of an error and take some action before your code will compile.
 This requirement makes your program more robust by ensuring that you’ll
 discover errors and handle them appropriately before you’ve deployed your code
-to production!
+to production! -->
+Стремление Rust к надежности распространяется и на обработку ошибок. Ошибки -
+это реальность в программном обеспечении, поэтому Rust имеет ряд функций для
+обработки ситуаций, когда что-то идет не так. Во многих случаях Rust требует,
+чтобы вы признали возможность ошибки и предприняли некоторые действия,
+прежде чем ваш код скомпилируется. Это требование делает вашу программу более
+надежной, гарантируя, что вы обнаружите ошибки и соответствующим образом их
+обработаете, прежде чем развернёте свой код в рабочей среде!
 
-Rust groups errors into two major categories: *recoverable* and *unrecoverable*
+<!-- Rust groups errors into two major categories: *recoverable* and *unrecoverable*
 errors. For a recoverable error, such as a file not found error, it’s
 reasonable to report the problem to the user and retry the operation.
 Unrecoverable errors are always symptoms of bugs, like trying to access a
-location beyond the end of an array.
+location beyond the end of an array. -->
+Rust группирует ошибки в две основные категории: *исправимые  и *неисправимые*
+ошибки. Для исправимой ошибки, такой как "файла не найден", целесообразно
+сообщить о проблеме пользователю и повторить операцию. Неустранимые ошибки -
+это всегда признаки багов, например, попытка получить доступ к элементам
+за пределами массива.
 
 Most languages don’t distinguish between these two kinds of errors and handle
 both in the same way, using mechanisms such as exceptions. Rust doesn’t have
@@ -22,3 +35,11 @@ unrecoverable error. This chapter covers calling `panic!` first and then talks
 about returning `Result<T, E>` values. Additionally, we’ll explore
 considerations when deciding whether to try to recover from an error or to stop
 execution.
+Большинство языков не различают эти два вида ошибок и обрабатывают их одинаково,
+используя такие механизмы, как исключения. В Rust нет механизмов исключения. 
+Вместо этого он использует тип `Result <T, E>` для исправиемых ошибок и макрос 
+`panic!`, который останавливает выполнение, когда программа сталкивается с
+неисправимой ошибкой. В этой главе рассматривается сначала вызов `panic!`,
+а затем идет речь о возврате значений `Result <T, E>`. Кроме того, мы рассмотрим
+ситуации для которых нужно принять решение о том, следует ли попытаться восстановиться
+после ошибки или остановить выполнение.
