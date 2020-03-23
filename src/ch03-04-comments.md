@@ -42,7 +42,7 @@ single line, you’ll need to include `//` on each line, like this: -->
 
 <!-- But you’ll more often see them used in this format, with the comment on a
 separate line above the code it’s annotating: -->
-Но чаще вы будете видеть их в таком формате, с комментарием в отдельной строке
+Но чаще вы будете видеть их в таком формате - в отдельной строке,
 над кодом, который он комментирует:
 
 <!-- <span class="filename">Filename: src/main.rs</span> -->
