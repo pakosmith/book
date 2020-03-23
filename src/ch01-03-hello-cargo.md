@@ -21,7 +21,7 @@ using Cargo, adding dependencies will be much easier to do. -->
 при помощи Cargo, мы использовали только ту часть Cargo, которая обрабатывает
 создание вашего кода. По мере написания более сложных программ на Rust вы
 будете добавлять зависимости, и если вы начнете проект с использованием
-Cargo, добавление зависимостей будет намного проще.
+Cargo, добавлять зависимости будет намного проще.
 
 <!-- Because the vast majority of Rust projects use Cargo, the rest of this book
 assumes that you’re using Cargo too. Cargo comes installed with Rust if you
