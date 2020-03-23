@@ -29,7 +29,7 @@ used the official installers discussed in the
 [“Installation”][installation]<!-- ignore -> section. If you installed Rust
 through some other means, check whether Cargo is installed by entering the
 following into your terminal: -->
-Поскольку подавляющее большинство проектов Rust используют Cargo, далее в
+Поскольку подавляющее большинство проектов Rust использует Cargo, далее в
 этой книге предполагается, что вы тоже используете его. Cargo поставляется
 с Rust, если вы использовали официальные установщики, описанные в разделе
 [«Установка»][installation]<!-- ignore -->. Если вы установили Rust с помощью
