@@ -375,13 +375,13 @@ you’ve learned how to: -->
 * Обновиться до новой версии Rust
 * Открыть локально установленную документацию
 * Написать и запустить программу “Hello, world!”, используя `rustc` напрямую
-* Создайте и запустите новый проект, используя конвенции Cargo
+* Создать и запустить новый проект, используя конвенции Cargo
 
 <!-- This is a great time to build a more substantial program to get used to reading
 and writing Rust code. So, in Chapter 2, we’ll build a guessing game program.
 If you would rather start by learning how common programming concepts work in
 Rust, see Chapter 3 and then return to Chapter 2. -->
-Настало время для создания более сложных программ, чтобы привыкнуть к чтению
+Настало время для создания более сложных программ для привыкания к чтению
 и написанию кода на Rust. Итак, во второй главе мы создадим игру-угадайку. Если
 вы хотите начать с изучения общих концепций программирования в Rust,
 см. Главу 3, а затем вернитесь к Главе 2.
