@@ -34,7 +34,7 @@ collections that are used very often in Rust programs: -->
 <!-- To learn about the other kinds of collections provided by the standard library,
 see [the documentation][collections]. -->
 Чтобы узнать о других видах коллекций, предоставляемых стандартной библиотекой,
-см. [lокументаци.][collections].
+см. [документацию][collections].
 
 [collections]: ../std/collections/index.html
 
